@@ -1,4 +1,4 @@
-# TraversingClangASTpython
+# Traversing Clang's AST with python
 A simple guide on how to use libclang to travers clang's AST via python
 
 ## Steps for Linux
@@ -23,11 +23,11 @@ If libclang is not linked properly, an error will be thrown. Something like this
 ```sh
 clang.cindex.LibclangError: libclang.so: cannot open shared object file: No such file or directory. To provide a path to libclang use Config.set_library_path() or Config.set_library_file().
 ```
-By default, libclang.so is located in this directory (or somewhere similar):
+By default, `libclang.so` is located in this directory (or somewhere similar):
 ```sh
 /usr/lib/x86_64-linux-gnu
 ```
-find the libclang-\<version>.so.1 in this directory, and link it to the libclang.so by running the following command
+find the `libclang-\<version>.so.1` in this directory, and link it to the `libclang.so` by running the following command
 ```sh
 $ sudo ln -s libclang-10.so.1 libclang.so
 ```
@@ -39,7 +39,7 @@ inside the downloaded file go to the following directory:
 bindings/python/
 ```
 
-and copy the clang folder to the lib folder of your python interpreter.
+and copy the `clang` folder to the `lib` folder of your python interpreter.
 If you are not sure about where python is installed, just run the following python code snippet to find the location of python interpreter.
 ```sh
 import sys
