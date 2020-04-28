@@ -46,4 +46,15 @@ import sys
 print(sys.executable)
 ```
 
-That's all.
+## Running sample files
+`sample-hello.cpp` is just a very simple `Hello World` c++ program. We will create an AST for this file.
+
+Simply run the `ASTwithClang.py` to see some information of the `sample-hello.` abstract syntax tree.
+
+
+## Windows Issue
+Note, I have tried the steps mentioned above on Windows. I always ran into
+```sh
+TranslationUnitLoadError("Error parsing translation unit.")
+```
+And still could not find a way around this issue. 
