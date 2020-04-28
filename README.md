@@ -31,3 +31,19 @@ find the libclang-\<version>.so.1 in this directory, and link it to the libclang
 ```sh
 $ sudo ln -s libclang-10.so.1 libclang.so
 ```
+
+### Setting up the clang python library
+Download the last version of [clang source code](https://releases.llvm.org/download.html).
+inside the downloaded file go to the following directory:
+```sh
+bindings/python/
+```
+
+and copy the clang folder to the lib folder of your python interpreter.
+If you are not sure about where python is installed, just run the following python code snippet to find the location of python interpreter.
+```sh
+import sys
+print(sys.executable)
+```
+
+That's all.
