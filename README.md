@@ -33,13 +33,9 @@ $ sudo ln -s libclang-10.so.1 libclang.so
 ```
 
 ### Setting up the clang python library
-Download the last version of [clang source code](https://releases.llvm.org/download.html).
-inside the downloaded file go to the following directory:
-```sh
-bindings/python/
-```
 
-and copy the `clang` folder to the `lib` folder of your python interpreter.
+Go to this [URL](https://github.com/llvm/llvm-project/tree/master/clang/bindings/python) and copy the `clang` folder.
+Past the clang folder to the `lib` folder of your python interpreter.
 If you are not sure about where python is installed, just run the following python code snippet to find the location of python interpreter.
 ```sh
 import sys
@@ -57,4 +53,4 @@ Note, I have tried the steps mentioned above on Windows. I always ran into
 ```sh
 TranslationUnitLoadError("Error parsing translation unit.")
 ```
-And still could not find a way around this issue. 
+And still could not find a way around this issue.
