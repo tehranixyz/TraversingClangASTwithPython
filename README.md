@@ -27,7 +27,7 @@ By default, libclang.so is located in this directory (or somewhere similar):
 ```sh
 /usr/lib/x86_64-linux-gnu
 ```
-find the libclang-<version>.so.1 in this directory, and link it to the libclang.so by running the following command
+find the libclang-\<version>.so.1 in this directory, and link it to the libclang.so by running the following command
 ```sh
 $ sudo ln -s libclang-10.so.1 libclang.so
 ```
